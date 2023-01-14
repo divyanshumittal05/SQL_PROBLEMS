@@ -1,0 +1,9 @@
+Query the two cities in STATION with the shortest and longest CITY names, as well as their respective lengths
+(i.e.: number of characters in the name). If there is more than one smallest or largest city, choose the one that comes first when ordered alphabetically.
+
+
+select CITY,LENGTH(CITY) from STATION order by Length(CITY) asc, city limit 1;
+select CITY,LENGTH(CITY) from STATION order by Length(CITY) desc, city limit 1; 
+
+-- Firstly We Order by City Length because we need the shorest city and largest city in length
+   then arrange by city beacause their can be any order of city name.
